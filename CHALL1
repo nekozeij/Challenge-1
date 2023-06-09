@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+//IZZY-JHOY B. PADILLA BSIT
+
+contract VariablesContract {
+    string public NameVariable;
+    uint public AgeVariable;    
+    bool public ConditionVariable;
+    address public LocationVariable;
+
+    // get and set functions for a string type variable
+    function setNameVariable(string memory newValue) public {
+        NameVariable = newValue;
+    }
+    
+    function getstringVariable() public view returns (string memory) {
+        return NameVariable;
+    }
+
+    // get and set functions for uint type variable
+    function setAgeVariable(uint newValue) public {
+       AgeVariable = newValue;
+    }
+    
+    function getintVariable() public view returns (uint) {
+        return AgeVariable;
+    }
+    
+    // // get and set functions for a boolean variable
+    function setConditionVariable(bool newValue) public {
+        ConditionVariable = newValue;
+    }
+    
+    function getConditionVariable() public view returns (bool) {
+        return ConditionVariable;
+    }
+    
+    // get and set functions for an address variable
+    function setLocationVariable(address newValue) public {
+        LocationVariable = newValue;
+    }
+    
+    function getLocationVariable() public view returns (address) {
+        return LocationVariable;
+    }
+}
